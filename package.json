@@ -1,0 +1,24 @@
+{
+  "name": "js-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --open --no-info"
+  },
+  "keywords": [],
+  "author": "Pawel Grzybek <grzybecki@gmail.com> (https://pawelgrzybek.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "6.18.0",
+    "babel-loader": "6.2.7",
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "html-webpack-plugin": "2.24.0",
+    "webpack": "1.13.2",
+    "webpack-dev-server": "2.1.0-beta.10"
+  },
+  "dependencies": {
+    "webpack": "2.1.0-beta.25"
+  }
+}
