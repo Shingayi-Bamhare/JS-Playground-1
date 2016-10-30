@@ -1,2 +1,2 @@
 const app = document.getElementById('app');
-app.textContent = 'Welcome in JS Playground 🎮';
+app.textContent = 'Welcome to JS Playground 🎮';
