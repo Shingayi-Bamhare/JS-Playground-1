@@ -3,12 +3,15 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const PATHS = {
-  app: path.join(__dirname, 'app'),
-  build: path.join(__dirname, 'build'),
+  src: path.join(__dirname, 'src'),
+  build: path.join(__dirname, 'dist'),
 };
 
 module.exports = {
-  entry: PATHS.app,
+  context: PATHS.src,
+  entry: {
+    app: './app.js',
+  },
   output: {
     path: PATHS.build,
     filename: 'bundle.js',
