@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --open --no-info"
+    "dev": "webpack-dev-server --hot --open"
   },
   "keywords": [],
   "author": "Pawel Grzybek <grzybecki@gmail.com> (https://pawelgrzybek.com/)",
