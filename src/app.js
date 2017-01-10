@@ -1,4 +1,8 @@
-import './style.css';
+// import styles
+import styles from './style.css';
 
-const app = document.getElementById('app');
-app.textContent = 'Welcome to JS Playground 🎮';
+// your app
+const p = document.createElement('p');
+p.innerHTML = 'Welcome to JS Playground 🎮';
+
+document.body.appendChild(p);
