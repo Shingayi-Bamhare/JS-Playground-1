@@ -1,6 +1,6 @@
 # JS-Playground
 
-It is not a serious project — really. It's made just to quickly smash some testing JavaScript environment to play around with some brand new framework (because this one that came out week ago is already outdated).
+This project is made to quickly smash some testing JavaScript environment to play around with some brand new framework (because this one that came out week ago is already outdated). There is an easy `build` script to generate production version of your app as well. Have fun :)
 
 ## How?
 
@@ -10,16 +10,28 @@ cd JS-Playground
 ```
 then
 
-```
+```bash
 npm i
 npm run dev
 ```
 
 or :)
 
-```
+```bash
 yarn install
 yarn run dev
+```
+
+when it is finished...
+
+```bash
+npm run build
+```
+
+or
+
+```bash
+yarn run build
 ```
 
 Yo 🎮
