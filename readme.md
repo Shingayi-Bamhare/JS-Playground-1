@@ -18,7 +18,7 @@ npm run dev
 or :)
 
 ```bash
-yarn install
+yarn
 yarn run dev
 ```
 
