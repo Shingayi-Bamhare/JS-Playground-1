@@ -34,6 +34,18 @@ module.exports = {
         test: /\.html$/,
         loader: 'html-loader'
       },
+      {
+        test: /.*\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: 'assets/[name].[ext]',
+              limit: 5000
+            }
+          }
+        ]
+      }
     ]
   },
   plugins: [
