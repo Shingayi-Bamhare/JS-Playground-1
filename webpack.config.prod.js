@@ -3,30 +3,25 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/app',
+  entry: './src/',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
-    // rules - formerly known as loaders
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
         loader: 'babel-loader',
-        options: {
+        query: {
           presets: [
-            [
-              'latest',
-              {
-                // don't convert modules to CommonJS
-                es2015: {
-                  modules: false,
-                }
-              },
-            ],
-          ]
+            ['es2015', { modules: false }]
+          ],
+          plugins: ['transform-class-properties']
         },
       },
       {
