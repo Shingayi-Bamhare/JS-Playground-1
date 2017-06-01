@@ -7,6 +7,10 @@
     "dev": "webpack-dev-server --config webpack.config.dev.js --open",
     "build": "webpack --config webpack.config.prod.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawelgrzybek/JS-Playground.git"
+  },
   "keywords": [],
   "author": "Pawel Grzybek <grzybecki@gmail.com> (https://pawelgrzybek.com/)",
   "license": "MIT",
