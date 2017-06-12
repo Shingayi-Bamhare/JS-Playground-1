@@ -20,32 +20,12 @@ module.exports = {
           presets: [
             ['es2015', { modules: false }]
           ],
-          plugins: ['transform-class-properties']
         },
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
       },
       {
         test: /\.html$/,
         loader: 'html-loader'
       },
-      {
-        test: /.*\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              name: 'assets/[name].[ext]',
-              limit: 5000
-            }
-          }
-        ]
-      }
     ]
   },
   plugins: [
