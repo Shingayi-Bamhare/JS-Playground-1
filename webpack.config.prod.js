@@ -47,7 +47,6 @@ module.exports = {
       comments: false
     }),
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
       minify: {
         collapseWhitespace: true,
         removeComments: true,
