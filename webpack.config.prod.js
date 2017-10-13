@@ -19,7 +19,12 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: [
-            ['es2015', { modules: false }]
+            ['env', {
+              targets: {
+                browsers: ['chrome >= 12', 'IE >= 10', 'Firefox >= 16', 'Opera >= 15', 'Safari >= 4', 'Android >= 4', 'iOS > 4'],
+                node: 'current'
+              },
+            }]
           ],
         },
       },
