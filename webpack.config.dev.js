@@ -2,8 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'eval-source-map',
-  entry: './src/',
+  entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -16,21 +15,35 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
-        loader: 'babel-loader',
-        query: {
-          presets: [
-            ['env', {
-              targets: {
-                browsers: ['chrome >= 12', 'IE >= 10', 'Firefox >= 16', 'Opera >= 15', 'Safari >= 4', 'Android >= 4', 'iOS > 4'],
-                node: 'current'
-              },
-            }]
-          ],
-        },
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              [
+                'env', {
+                  targets: {
+                    browsers: [
+                      'chrome >= 12',
+                      'IE >= 10',
+                      'Firefox >= 16',
+                      'Opera >= 15',
+                      'Safari >= 4',
+                      'Android >= 4',
+                      'iOS > 4'
+                    ],
+                    node: 'current',
+                  },
+                }
+              ]
+            ],
+          }
+        }
       },
       {
         test: /\.html$/,
-        loader: 'html-loader'
+        use: {
+          loader: 'html-loader',
+        }
       },
     ]
   },
