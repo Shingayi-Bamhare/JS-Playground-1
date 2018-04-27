@@ -1,4 +1,6 @@
-const p = document.createElement('p');
-p.innerHTML = 'Welcome to JS Playground 💋';
+import React from 'react';
+import { render } from 'react-dom';
 
-document.body.appendChild(p);
+const App = () => <p>App</p>;
+
+render(<App />, document.getElementById('app'));

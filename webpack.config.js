@@ -5,7 +5,7 @@ module.exports = {
     rules: [
       // compile js to env compatibile
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
